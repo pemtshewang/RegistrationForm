@@ -26,7 +26,7 @@
         android:id="@+id/nameTemplate7"
         android:layout_width="216dp"
         android:layout_height="60dp"
-        android:text="Registration Form"
+        android:text="Registration Form (Filled)"
         android:textColor="#FFFFFF"
         android:textSize="23sp"
         android:textStyle="bold"
@@ -42,7 +42,7 @@
         android:id="@+id/nameTemplate6"
         android:layout_width="116dp"
         android:layout_height="35dp"
-        android:text="Academic Year"
+        android:text="Study Year"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -51,7 +51,52 @@
         app:layout_constraintHorizontal_bias="0.101"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.623" />
+        app:layout_constraintVertical_bias="0.686" />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="116dp"
+        android:layout_height="35dp"
+        android:text="Semester"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.902" />
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="103dp"
+        android:layout_height="56dp"
+        android:text="Scholarship Type"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.825" />
+
+    <TextView
+        android:id="@+id/nameTemplate8"
+        android:layout_width="124dp"
+        android:layout_height="31dp"
+        android:text="Academic Year"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.577" />
 
     <TextView
         android:id="@+id/nameTemplate11"
@@ -66,22 +111,7 @@
         app:layout_constraintHorizontal_bias="0.096"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.898" />
-
-    <TextView
-        android:id="@+id/nameTemplate9"
-        android:layout_width="112dp"
-        android:layout_height="80dp"
-        android:text="Semester and Scholarship status"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.789" />
+        app:layout_constraintVertical_bias="0.99" />
 
     <TextView
         android:id="@+id/nameTemplate2"
@@ -114,21 +144,6 @@
         app:layout_constraintVertical_bias="0.472" />
 
     <TextView
-        android:id="@+id/yearofstudy"
-        android:layout_width="136dp"
-        android:layout_height="29dp"
-        android:text="Year of Study"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.821"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.471" />
-
-    <TextView
         android:id="@+id/nameTemplate3"
         android:layout_width="107dp"
         android:layout_height="23dp"
@@ -153,7 +168,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintHorizontal_bias="0.918"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.309" />
@@ -163,7 +178,7 @@
         android:layout_width="223dp"
         android:layout_height="51dp"
         android:ems="10"
-        android:inputType="number"
+        android:background="@drawable/textviewborder"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.159"
@@ -172,12 +187,91 @@
         app:layout_constraintVertical_bias="0.217" />
 
     <EditText
+        android:id="@+id/studyYear"
+        android:layout_width="223dp"
+        android:layout_height="51dp"
+        android:background="@drawable/textviewborder"
+        android:ems="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.702" />
+
+    <EditText
+        android:id="@+id/modules"
+        android:layout_width="225dp"
+        android:layout_height="53dp"
+        android:background="@drawable/textviewborder"
+        android:ems="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.991" />
+
+    <EditText
+        android:id="@+id/semester"
+        android:layout_width="219dp"
+        android:layout_height="26dp"
+        android:background="@drawable/textviewborder"
+        android:ems="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89" />
+
+    <EditText
+        android:id="@+id/scholarshipType"
+        android:layout_width="223dp"
+        android:layout_height="51dp"
+        android:background="@drawable/textviewborder"
+        android:ems="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.819" />
+
+    <EditText
+        android:id="@+id/academicYear"
+        android:layout_width="223dp"
+        android:layout_height="51dp"
+        android:background="@drawable/textviewborder"
+        android:ems="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.582" />
+
+    <EditText
+        android:id="@+id/program"
+        android:layout_width="223dp"
+        android:layout_height="51dp"
+        android:background="@drawable/textviewborder"
+        android:ems="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.463" />
+
+    <EditText
         android:id="@+id/fname"
         android:layout_width="103dp"
         android:layout_height="51dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
+        android:background="@drawable/textviewborder"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.097"
@@ -189,42 +283,31 @@
         android:id="@+id/mname"
         android:layout_width="103dp"
         android:layout_height="51dp"
+        android:background="@drawable/textviewborder"
         android:ems="10"
-        android:inputType="textPersonName"
         android:text="Name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.519"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.357" />
 
+    <!-- semester radio button -->
     <EditText
         android:id="@+id/lname"
         android:layout_width="103dp"
         android:layout_height="51dp"
+        android:background="@drawable/textviewborder"
         android:ems="10"
-        android:inputType="textPersonName"
         android:text="Name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintHorizontal_bias="0.948"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.355" />
 
-    <Spinner
-        android:id="@+id/programSpin"
-        android:layout_width="150dp"
-        android:layout_height="21dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.114"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.508" />
-
-    <!-- semester radio button -->
     <RadioGroup
         android:id="@+id/semesterGroup"
         android:layout_width="wrap_content"
@@ -245,38 +328,6 @@
         app:layout_constraintTop_toTopOf="parent">
 
     </RadioGroup>
-    <Spinner
-        android:id="@+id/yearSpin"
-        android:layout_width="150dp"
-        android:layout_height="21dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.865"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.507" />
-
-    <CheckBox
-        android:id="@+id/govtScholarship"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="12dp"
-        android:text="Govt funded"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.736" />
-
-    <CheckBox
-        android:id="@+id/selfFund"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:text="Self funded"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.782" />
 
     <View
         android:id="@+id/divider"
@@ -305,8 +356,8 @@
         android:background="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.546"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintVertical_bias="0.521"
+        tools:layout_editor_absoluteX="1dp" />
 
     <View
         android:id="@+id/divider4"
@@ -315,8 +366,8 @@
         android:background="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.678"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintVertical_bias="0.626"
+        tools:layout_editor_absoluteX="1dp" />
 
     <View
         android:id="@+id/divider5"
@@ -325,41 +376,8 @@
         android:background="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.826"
-        tools:layout_editor_absoluteX="1dp" />
-
-    <View
-        android:id="@+id/divider6"
-        android:layout_width="409dp"
-        android:layout_height="1dp"
-        android:background="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.924"
+        app:layout_constraintVertical_bias="0.747"
         tools:layout_editor_absoluteX="0dp" />
-
-    <Button
-        android:id="@+id/submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Submit"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/modulesInput"
-        android:layout_width="223dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Type Your Modules Here"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.851"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.895" />
 
     <RadioGroup
         android:id="@+id/seasonalSemester"
@@ -367,39 +385,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/divider4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/nameTemplate6"
-        app:layout_constraintTop_toBottomOf="@+id/yearSpin">
-
-        <RadioButton
-            android:id="@+id/autumnSemester"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Autumn-Semester 2022 "
-            android:textAlignment="textStart"
-            android:textColor="#FFFEFE"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/nameTemplate6"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.842"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.954" />
-
-        <RadioButton
-            android:id="@+id/springSemester"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Spring-Semester 2022 "
-            android:textAlignment="textStart"
-            android:textColor="#FFFEFE"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.813"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.642" />
-    </RadioGroup>
+        app:layout_constraintStart_toEndOf="@+id/nameTemplate6"/>
 
     <RadioGroup
         android:id="@+id/numberSemester"
@@ -407,37 +393,5 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/divider5"
         app:layout_constraintEnd_toStartOf="@+id/checkBox"
-        app:layout_constraintStart_toEndOf="@+id/nameTemplate9"
-        app:layout_constraintTop_toBottomOf="@+id/divider4">
-
-        <RadioButton
-            android:id="@+id/semesterI"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Semester I "
-            android:textAlignment="textStart"
-            android:textColor="#FFFEFE"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.127"
-            app:layout_constraintStart_toEndOf="@+id/nameTemplate9"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.732" />
-
-        <RadioButton
-            android:id="@+id/semesterII"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Semester II "
-            android:textAlignment="textStart"
-            android:textColor="#FFFEFE"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.118"
-            app:layout_constraintStart_toEndOf="@+id/nameTemplate9"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.778" />
-    </RadioGroup>
+        app:layout_constraintTop_toBottomOf="@+id/divider4" />
 </androidx.constraintlayout.widget.ConstraintLayout>

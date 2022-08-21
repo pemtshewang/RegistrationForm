@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="spinnerstr">Choose an item</string>
+    <string-array name="modules">
+        <item>DZG101</item>
+        <item>CTE203</item>
+        <item>CTE206</item>
+        <item>MAT205</item>
+        <item>MAT206</item>
+        <item>TSM505</item>
+        <item>DIS302</item>
+    </string-array>
+</resources>
